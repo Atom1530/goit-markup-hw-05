@@ -444,7 +444,7 @@
               placeholder="E-mail">
             </label>
             <button type="submit" class="footer-button">Subscribe
-              <svg widht="24" height="24" class="footer-svg">
+              <svg width="24" height="24" class="footer-svg">
                 <use href="./images/icons.svg#icon-submitsvg">
                 </use>
               </svg>
@@ -453,39 +453,76 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open1">
+    <div class="backdrop is-open">
       <div class="modal">
           <button type="button" class="closebutton">
-            <svg class="modal-close-svg" width="8" height="8">
+            <svg class="icon" width="8" height="8">
               <use href="./images/icons.svg#closesvg"></use>
             </svg>
           </button>
-          <div class="modal-wrapper"></div>
           <p class="modal-paragraph">
             Leave your contacts and we will call you back
           </p>
-          <form>
-            <div class="modal-inputs">
-              <label for="username" class="modal-inputs-label">Name</label>
-              <div class="">
-                <input type="text" id="username" name="" class="input-style"/>
-               <svg class="madal-svg">
-                <use>
+          <form class="contact-form" name="contact-form" autocomplete="off">
+            <div class="label-box">
+              <label for="username" class="form-label">Name</label>
+              <div class="label-box">
+                <input type="text" autofocus id="username" name="username" class="input-style"/>
+                <svg class="icon" width="18" height="24">
+                <use href="/images/icons.svg#icon-personsvg">
                 </use>
                </svg>
               </div>
             </div>
-            <div class="modal-inputs">
-              <label for="usertel" class="modal-inputs-label">Tel</label>
-              <input type="text" id="usertel" name="" class="input-style"/>
+            <div class="label-box">
+              <label for="usertel" class="form-label">Tel</label>
+              <div class="label-box">
+                <input type="tel" autofocus id="usertel" name="usertel" class="input-style"/>
+                <svg class="icon" width="18" height="24">
+                <use href="/images/icons.svg#icon-phonesvg">
+                </use>
+               </svg>
+              </div>
             </div>
-              <div class="modal-inputs">
-              <label for="useremail" class="modal-inputs-label">Email</label>
-              <input type="text" id="useremail" name="" class="input-style"/>
+              <div class="label-box">
+              <label for="useremail" class="form-label">Tel</label>
+              <div class="label-box">
+                <input type="email" autofocus id="useremail" name="useremail" class="input-style"/>
+                <svg class="icon" width="18" height="24">
+                <use href="/images/icons.svg#icon-emailsvg">
+                </use>
+               </svg>
+              </div>
+            </div>
+            <div class="textarea-box">
+              <label for="usercomment" class="form-label">Comment</label>
+              <div>
+                <textarea id="usercomment"        placeholder="Text input"
+                name="usercomment"
+                class="form-textarea">
+              </textarea>
+              </div>
             </div>
           </form>
           </div>
         </div>
+        <div class="modal-checkbox">
+          <input type="checkbox"
+              id="user-privacy"
+              value="true"
+              name="user-privacy"
+              class="visually-hidden">
+              <label>
+                <span class="terms-accent">
+                  <svg class="icon checkbox"        width="10" height="8">
+                    <use href="./images/icons.svg#icon-approve"></use>
+                  </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="" target="_blank" class="privacy-link">Privacy Policy</a>
+              </label>
+        </div>
+        <button type="submit" class="start-button">Send</button>
       </div>
     </div>
   </body>
