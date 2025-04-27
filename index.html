@@ -460,7 +460,27 @@
     </footer>
     <div class="backdrop is-open">
       <div class="modal">
-        <button type="submit" class="closebutton"></button>
+        <button type="button" class="closebutton">
+          <svg class="modal-close-svg" width="8" height="8">
+            <use href="./images/icons.svg#icon-closesvg"></use>
+          </svg>
+        </button>
+        <p class="modal-paragraph">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal-form">
+          <div class="modal-form-box">
+            <label class="label" for="user-name">Name</label>
+            <div class="input-box">
+              <input
+                type="text"
+                id="user-name"
+                class="input"
+                name="user-name"
+              />
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </body>
