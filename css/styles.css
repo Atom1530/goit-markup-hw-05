@@ -716,6 +716,17 @@ fill: #ffffff
 
 .input-box {
    position: relative;
+   margin-bottom: 8px;
+}
+
+.input-box:has(input:hover) .form-icon,.input-box:has(input:focus) .form-icon {
+      fill: #4d5ae5;
+}
+
+.input-box:hover,
+.input-box:focus {
+   border: 1px solid #4d5ae5;
+   border-radius: 4px;
 }
 
 .input {
