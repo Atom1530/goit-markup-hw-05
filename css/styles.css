@@ -808,9 +808,10 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.checkbox:checked + .custom-checkbox-label .checkbox-box {
+.custom-checkbox-input:checked + .custom-checkbox-label .checkbox-box {
    fill:#F4F4FD;
    border: none;
+   background-color:#404bbf;
 }
 
 .user-rivacy-policy {
