@@ -519,26 +519,26 @@
           </div>
           <div class="checkbox">
             <input
+              for="user-privacy"
               type="checkbox"
-              class="hidden-checkbox"
+              class="custom-checkbox-input visually-hidden"
               name="user-privacy"
               id="user-privacy"
               value="true"
-              visually-hidden
             />
-            <label class="label" for="user-privacy" name="user-privacy">
+            <label class="custom-checkbox-label" for="user-privacy">
               <span class="checkbox-box">
-                <svg width="10" heigth="8" class="approval-icon">
+                <svg width="10" height="8" class="checkbox-icon">
                   <use href="./images/icons.svg#icon-approve"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="user-rivacy-policy">Privacy Policy</a>
+              <span class="checkbox-text">
+                I accept the terms and conditions of the
+                <a href="#" class="privacy-policy">Privacy Policy</a>
+              </span>
             </label>
           </div>
-          <div>
-            <button type="submit" class="section-one-button">Send</button>
-          </div>
+          <button type="submit" class="section-one-button">Send</button>
         </form>
       </div>
     </div>
